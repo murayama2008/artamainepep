@@ -71,9 +71,9 @@ laporan lp;
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 255, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(204, 204, 204));
         kGradientPanel1.setkGradientFocus(300);
-        kGradientPanel1.setkStartColor(new java.awt.Color(153, 0, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(51, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -107,9 +107,9 @@ laporan lp;
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        kGradientPanel2.setkEndColor(new java.awt.Color(0, 255, 204));
+        kGradientPanel2.setkEndColor(new java.awt.Color(204, 204, 204));
         kGradientPanel2.setkGradientFocus(400);
-        kGradientPanel2.setkStartColor(new java.awt.Color(0, 204, 204));
+        kGradientPanel2.setkStartColor(new java.awt.Color(51, 51, 51));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -152,6 +152,9 @@ laporan lp;
                     .addComponent(jLabel4))
                 .addContainerGap())
         );
+
+        kGradientPanel3.setkEndColor(new java.awt.Color(204, 204, 204));
+        kGradientPanel3.setkStartColor(new java.awt.Color(51, 51, 51));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

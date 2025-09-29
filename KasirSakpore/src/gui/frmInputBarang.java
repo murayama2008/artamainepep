@@ -80,8 +80,8 @@ public class frmInputBarang extends javax.swing.JDialog {
         });
 
         kGradientPanel1.setkBorderRadius(0);
-        kGradientPanel1.setkEndColor(new java.awt.Color(178, 234, 255));
-        kGradientPanel1.setkStartColor(new java.awt.Color(89, 130, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(153, 153, 153));
+        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 255));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,7 +121,7 @@ public class frmInputBarang extends javax.swing.JDialog {
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 409, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
                 .addContainerGap())
         );
 

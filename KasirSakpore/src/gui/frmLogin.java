@@ -223,7 +223,7 @@ public class frmLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_kGradientPanel1MousePressed
 
     private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
-        // TODO add your handling code here:
+        login();// TODO add your handling code here:
     }//GEN-LAST:event_kButton1ActionPerformed
 
     /**
