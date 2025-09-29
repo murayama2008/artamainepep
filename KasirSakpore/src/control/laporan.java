@@ -37,6 +37,7 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
+import javax.swing.JPanel;
 
 /**
  *
@@ -86,32 +87,33 @@ public class laporan extends koneksi{
      }
     }    
     
-       public void grafik(){
-     try {
-         DefaultCategoryDataset obj = new DefaultCategoryDataset();
-         String sql = "SELECT COUNT(no_faktur),tanggal FROM penjualan GROUP BY tanggal";
-         rs = st.executeQuery(sql);
-         while(rs.next()){
-             for(int i=0;i<rs.getRow();i++){
-                 obj.setValue(rs.getInt(1), "HARI", rs.getString(2));
-                 JFreeChart chart = ChartFactory.createLineChart("GRAFIK PENJUALAN", null, null, obj);
-                 CategoryPlot  objc = chart.getCategoryPlot();
-                 objc.setRangeGridlinePaint(Color.black);
-                 objc.setBackgroundPaint(Color.white); 
-              
-                 
-                 ChartPanel panel = new ChartPanel(chart);
-                 frmLaporan.chart.removeAll();
-                 frmLaporan.chart.add(panel,BorderLayout.CENTER);
-                 frmLaporan.chart.validate();
-             }
-         }
-     } catch (SQLException ex) {
-         Logger.getLogger(laporan.class.getName()).log(Level.SEVERE, null, ex);
-     }
-        
-     
-    }
+       public void grafik(JPanel panelChart) {
+                try {
+                    DefaultCategoryDataset obj = new DefaultCategoryDataset();
+                    String sql = "SELECT COUNT(no_faktur),tanggal FROM penjualan GROUP BY tanggal";
+                    rs = st.executeQuery(sql);
+
+                    while (rs.next()) {
+                        obj.setValue(rs.getInt(1), "Jumlah", rs.getString(2));
+                    }
+
+                    JFreeChart chart = ChartFactory.createLineChart(
+                        "GRAFIK PENJUALAN", "Tanggal", "Jumlah", obj
+                    );
+                    CategoryPlot plot = chart.getCategoryPlot();
+                    plot.setRangeGridlinePaint(Color.black);
+                    plot.setBackgroundPaint(Color.white);
+
+                    ChartPanel panel = new ChartPanel(chart);
+                    panelChart.removeAll();
+                    panelChart.setLayout(new BorderLayout());
+                    panelChart.add(panel, BorderLayout.CENTER);
+                    panelChart.validate();
+
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+}
     
       public void printNota(String nofak) {
         JasperReport jasRep;
