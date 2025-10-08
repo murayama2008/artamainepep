@@ -17,7 +17,10 @@ public class control_loginn extends koneksi{
         super.setKoneksi();
     }
     public ResultSet login(String username,String password) throws SQLException{
-        String sql ="SELECT * FROM user where username = '"+username+"' AND password = '"+password+"'";
+        String sql = "SELECT * FROM users WHERE username='" + username + "' AND password='" + password + "'";
+
+
+
         rs = st.executeQuery(sql);
         return rs;
     }
