@@ -96,8 +96,6 @@ utama ut;
         btnInputBarang = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         BtnUser = new javax.swing.JButton();
-        BtnUser1 = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel7 = new javax.swing.JLabel();
@@ -233,18 +231,6 @@ utama ut;
             }
         });
 
-        BtnUser1.setBackground(new java.awt.Color(255, 255, 255));
-        BtnUser1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8_feedback_55px.png"))); // NOI18N
-        BtnUser1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnUser1ActionPerformed(evt);
-            }
-        });
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("FEEDBACK");
-
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("USER");
@@ -279,13 +265,9 @@ utama ut;
                                 .addGap(11, 11, 11)))))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnUser)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(BtnUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(BtnUser))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -302,14 +284,10 @@ utama ut;
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel12)))
+                .addGap(12, 12, 12)
+                .addComponent(btnPenjualan, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnPenjualan, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnLaporan, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -485,13 +463,6 @@ utama ut;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnUser1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnUser1ActionPerformed
-        // TODO add your handling code here:
-        frmFeedback frm = new frmFeedback(this, rootPaneCheckingEnabled);
-        frm.setTitle("Feedback");
-        frm.setVisible(true);
-    }//GEN-LAST:event_BtnUser1ActionPerformed
-
     private void BtnUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnUserActionPerformed
         // TODO add your handling code here:
         frmUser frm = new frmUser(this, rootPaneCheckingEnabled);
@@ -600,14 +571,12 @@ utama ut;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnUser;
-    private javax.swing.JButton BtnUser1;
     private javax.swing.JButton Btntransaksi;
     private javax.swing.JButton btnInputBarang;
     private javax.swing.JButton btnLaporan;
     private javax.swing.JButton btnPenjualan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
